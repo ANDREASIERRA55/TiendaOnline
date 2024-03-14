@@ -213,3 +213,38 @@ header button{
     opacity: 1;
 }
 
+/* *MENSAJE*/
+
+.mensaje{
+    display:inline-block;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url(img/imagen.png);
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 50px;
+} 
+.mensaje::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+} 
+ .mensaje p{
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-size: 65px;
+    font-weight: 100;
+    text-shadow: 5px 0 10px #000;
+} 
+
+/*Creacion de commit -m "creacion de baner mensaje"*/
