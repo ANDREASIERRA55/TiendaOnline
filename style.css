@@ -248,3 +248,71 @@ header button{
 } 
 
 /*Creacion de commit -m "creacion de baner mensaje"*/
+
+
+/**FAVORITO*/
+
+.favorito{
+    padding: 20px 150px;
+    height: 100vh;
+    position: relative;
+}
+.favorito::before{
+    content: "Principal";
+    position: absolute;
+    bottom: 2%;
+    left: 0%;
+    font-weight: 600;
+    font-size: 10vw;
+    color:rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+.favorito::after{
+    content: "Estrella";
+    position: absolute;
+    top: 2%;
+    right: 0%;
+    font-weight: 600;
+    font-size: 10vw;
+    color:rgba(0, 0, 0, 0.05);
+    z-index: -1;
+}
+.container-favorito > div{
+    float: left;
+    margin: 30px;
+}
+.imagen-fav{
+    width: 40%;
+    position: relative;
+}
+.imagen-fav img{
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+}
+.imagen-fav::before{
+    content: "Best choice";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--color--secundario);
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    color: #FFF;
+    transform: rotate(-10deg);
+    box-shadow: 0 0 10px 5px var(--color--secundario);
+    z-index: 1;
+    transition: all .5s;
+}
+.imagen-fav:hover::before{
+    transform: scale(1.2);
+}
+.content-fav{
+    width: 40%;
+    height: 100%;
+}
+
+
